@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Survey</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> 
@@ -25,27 +26,33 @@
 
   <fieldset>
     <legend>Personal Details</legend>
-      <div class="name">First Name:</div>
+    <div class="name">
+      <p>First Name:</p>
         <input type="text" placeholder="Enter name here">
-      <div class="last name">Last Name:</div>
+      <p>Last Name:</p>
         <input type="last name" placeholder="Enter last Name here">
+    </div>
       <div class="gender">
         <p>Gender:</p>
-        <p>
+        <p1>
             <input type="radio" name="gender" class="gen" value="male" checked> Male<br>
-            <input type="radio" name="gender" class="gen" value="female"> Female<br>
-            <input type="radio" name="gender" class="gen" value="other"> Other<br>
-        </p>
+        </p1>
+        <p1>
+          <input type="radio" name="gender" class="gen" value="female"> Female<br>
+        </p1>
       </div>
-    <div class="email">Email:</div>
+   
+      <div class="email">Email:</div>
         <input type="text" placeholder="Email">
-    <div class="phone">Phone No.:</div>
+      <div class="phone">Phone No.:</div>
         <input type="text" placeholder="Phone Number">
-    <div class="date-label">Date of Birth:</div>
-    <input type="date" name="bday">
-    <div class="education">University:</div>
+      <div class="date-label">Date of Birth:</div>
+        <input type="date" name="bday">
+    
     <div class="select">
-    <select id="dropdown">
+      <div class="university">
+      <p>university:</p>
+      <select id="dropdown">
         <option value="srm">SRM</option>
         <option value="vit">VIT</option>
         <option value="manipal">Manipal</option>
@@ -54,26 +61,21 @@
         <option value="amity">Amity</option>
         <option value="nit">NIT</option>
         <option value="iit">IIT</option>
-    </select>
-</div>
-
-    <Div class="year">Year</div>
-    <select id="dropdown2">
-        <option value="1">1st</option>
-        <option value="2">2nd</option>
-        <option value="3">3rd</option>  
-        <option value="4">4th</option>
-    </select>
+      </select>
+      </div>
     </div>
 
-    <Div class="city">City</div>
-        <select id="dropdown3">
-            <option value="delhi">Delhi</option>
-            <option value="mumbai">Mumbai</option>
-            <option value="chennai">Chennai</option>  
-            <option value="banglore"></option>
-        </select>
-        </div>
+    <div class="select">
+      <div class="city">
+      <p>City:</p>
+      <select id="dropdown">
+        <option value="delhi">Delhi</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="chennai">Chennai</option>  
+        <option value="banglore">Banglore</option>
+      </select>
+      </div>
+    </div>
 
   </fieldset>
   
@@ -81,64 +83,89 @@
     <div class="survey">
     <h1>Please go through the Survey.</h1>
     <h2>Your skills-</h2>
-    <p>
-      <input type="checkbox">C++<br>
-      <input type="checkbox">C<br>
-      <input type="checkbox">Java<br>
-      <input type="checkbox">Java Script<br>
-      <input type="checkbox">Python<br>
-      <input type="checkbox">HTML/CSS<br>
-      <input type="checkbox">Swift<br>
-      <input type="checkbox">Ruby<br>
+    <div class="skill">
+      <input type="checkbox" class="skills">C++<br>
+      <input type="checkbox" class="skills">C<br>
+      <input type="checkbox" class="skills">Java<br>
+      <input type="checkbox" class="skills">Java Script<br>
+      <input type="checkbox" class="skills">Python<br>
+      <input type="checkbox" class="skills">HTML/CSS<br>
+      <input type="checkbox" class="skills">Swift<br>
+      <input type="checkbox" class="skills">Ruby<br>
+    </div>
       
         
         <h4>Q1) Which programming language you know best?</h4>
+        <div class="quest">
         <input type="radio" class="radio" name="survey" value="a">C<br>
         <input type="radio" class="radio" name="survey" value="b">C++<br>
         <input type="radio" class="radio" name="survey" value="c">Python<br>
         <input type="radio" class="radio" name="survey" value="d">Any other<br>
+        <div class="ans">
         <p>If anyother the write your answer</p>
         <input type="text" placeholder="Write your answer here">
-        
+        </div>
+        </div>
+
         <h4>Q2) Which programming language you will suggest to a beginner?</h4>
+        <div class="quest">
         <input type="radio" class="radio" name="survey" value="a">C<br>
         <input type="radio" class="radio" name="survey" value="b">C++<br>
         <input type="radio" class="radio" name="survey" value="c">Python<br>
         <input type="radio" class="radio" name="survey" value="d">Any other<br>
+        <div class="ans">
         <p>If anyother the write your answer</p>
-        <input type="text" placeholder="Write your answer here">  
+        <input type="text" placeholder="Write your answer here">
+        </div>
+        </div>  
 
         <h4>Q3) How you prefer to learn coding?</h4>
+        <div class="quest">
         <input type="radio" class="radio" name="survey" value="a">Books<br>
         <input type="radio" class="radio" name="survey" value="b">Online Course<br>
         <input type="radio" class="radio" name="survey" value="c">Academy<br>
         <input type="radio" class="radio" name="survey" value="d">Any other<br>
+        <div class="ans">
         <p>If anyother the write your answer</p>
-        <input type="text" placeholder="Write your answer here">  
+        <input type="text" placeholder="Write your answer here"> 
+        </div>
+        </div> 
 
         <h4>Q4) Which compiler you usually use for coding?</h4>
+        <div class="quest">
         <input type="radio" class="radio" name="survey" value="a">Online<br>
         <input type="radio" class="radio" name="survey" value="b">Code Blocks<br>
         <input type="radio" class="radio" name="survey" value="c">Dev C<br>
         <input type="radio" class="radio" name="survey" value="d">Any other<br>
+        <div class="ans">
         <p>If anyother the write your answer</p>
-        <input type="text" placeholder="Write your answer here">  
+        <input type="text" placeholder="Write your answer here"> 
+        </div>
+        </div> 
 
         <h4>Q5) From how many years you are into coding field?</h4>
+        <div class="quest">
         <input type="radio" class="radio" name="survey" value="a">Beginner<br>
         <input type="radio" class="radio" name="survey" value="b">less than 1 year<br>
         <input type="radio" class="radio" name="survey" value="c">1 to 2 years<br>
         <input type="radio" class="radio" name="survey" value="d">More than 2 years<br>
+        <div class="ans">
         <p>Write the number of years</p>
-        <input type="text" placeholder="Write your answer here">  
+        <input type="text" placeholder="Write your answer here"> 
+        </div>
+        </div> 
 
         <h4>Q6) Which language according to you is most famous nowdays?</h4>
+        <div class="quest">
         <input type="radio" class="radio" name="survey" value="a">C<br>
         <input type="radio" class="radio" name="survey" value="b">C++<br>
         <input type="radio" class="radio" name="survey" value="c">Python<br>
         <input type="radio" class="radio" name="survey" value="d">Any other<br>
+        <div class="ans">
         <p>If anyother the write your answer</p>
-        <input type="text" placeholder="Write your answer here">  
+        <input type="text" placeholder="Write your answer here"> 
+        </div>
+        </div> 
       </div>
     </p>
   </fieldset>
