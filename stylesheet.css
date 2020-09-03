@@ -35,10 +35,7 @@ li {
     color:white;
     text-align:center;
     float:right;
-    padding-left:20px;
     padding-right:20px;
-    padding-top:20px;
-    padding-bottom:20px;
     font-size: 15px;
   }
 
@@ -149,4 +146,23 @@ footer{
   
 .footer-list li{
     padding-bottom:10px;
+  }
+
+  @media screen and (max-width: 500px) {
+    main {
+      background-size: 250%;
+      padding:20px;
+    }
+  
+  .heading h1{
+      font-size:50px;
+      padding:25px;
+      }
+
+  fieldset { 
+      border:2px solid rgb(36, 5, 5);
+      margin: 10px;
+      padding:20px;
+      background-color: rgba(176, 198, 226, 0.836);
+      }
   }
