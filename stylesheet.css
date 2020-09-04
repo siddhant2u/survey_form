@@ -1,3 +1,7 @@
+*{
+  margin: 0px;
+}
+
 body {
   font-family: 'Anaheim';
   font-size: 1.2em;
@@ -25,22 +29,19 @@ li {
     font-size:35px;
     font: bold;
     float:left;
-    padding-left:40px;
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-right:40px;
+    padding:10px;
   }
 
 .header-list li {
     color:white;
     text-align:center;
     float:right;
-    padding-right:20px;
+    padding:20px;
     font-size: 15px;
   }
 
 main{
-    padding-top:30px;
+    padding-top:50px;
     padding-bottom:50px;
     padding-right:300px;
     padding-left:300px;
@@ -52,7 +53,8 @@ main{
     font-size:80px;
     text-align:center;
     color:rgb(163, 9, 9);
-    font-weight: 300px;
+    font-weight: bold;
+    padding:20px;
     }
 
 input, textarea {
@@ -63,6 +65,10 @@ input, textarea {
     font-size: 15px;
     border: 1px solid #021f2e;
   }
+
+.gender {
+  display:inline-flex;
+}
 
 select, dropdown {
     width: 180px;
@@ -153,16 +159,83 @@ footer{
       background-size: 250%;
       padding:20px;
     }
+
+    header {
+      height: 40px;
+    }
+  
+  .header-logo {
+      font-size:20px;
+      padding:10px;
+    }
+  
+  .header-list li {
+      padding:15px;
+      font-size: 10px;
+    }
   
   .heading h1{
-      font-size:50px;
-      padding:25px;
+      font-size:40px;
+      padding-top:40px;
       }
 
   fieldset { 
-      border:2px solid rgb(36, 5, 5);
       margin: 10px;
       padding:20px;
-      background-color: rgba(176, 198, 226, 0.836);
       }
+
+input, textarea {
+    width: 200px;
+    padding: 10px;
+  }
+
+  .date-label {
+    width:200px;
+  }
+
+  .name {
+    font-size:17px;
+  }
+
+  .info{
+    font-size:17px;
+  }
+
+  .gender {
+    font-size:17px;
+  }
+
+  .survey h1{
+    font-size:25px;
+  }
+  
+  .survey h2{
+    font-size:17px;
+  }
+
+  .survey h4 {
+    font-size:17px;
+  }
+
+  .gender {
+    display:block;
+  }
+
+  .skill {
+    font-size:17px;
+  }
+  
+  .quest{
+    font-size:17px;
+  }
+
+  .skills{
+       font-size: 30px;
+       font-weight: 100px;
+   }
+
+   .feedback p{
+     padding:5px;
+     font-size:17px;
+   }
   }
