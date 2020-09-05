@@ -11,6 +11,10 @@ a {
     text-decoration: none;
   }
 
+  .header-logo a{
+    color:white;
+  }
+
 header {
     height: 55px;
     width: 100%;
@@ -154,6 +158,13 @@ footer{
     padding-bottom:10px;
   }
 
+  .thanks{
+    height:350px;
+    font-size: 80px;
+    text-align:center;
+    padding-top:100px;
+  }
+
   @media screen and (max-width: 500px) {
     main {
       background-size: 250%;
@@ -205,6 +216,10 @@ input, textarea {
     font-size:17px;
   }
 
+  .sur{
+    padding-top:40px;
+  }
+
   .survey h1{
     font-size:25px;
   }
@@ -237,5 +252,10 @@ input, textarea {
    .feedback p{
      padding:5px;
      font-size:17px;
+   }
+
+   .thanks{
+     font-size:50px;
+     height:400px;
    }
   }
