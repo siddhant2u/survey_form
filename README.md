@@ -1,3 +1,3 @@
-# survey_form
+## Survey Form
 
-A simple survey form made using HTML/CSS and Javascript.
+A simple survey form built with HTML/CSS and Javascript.
