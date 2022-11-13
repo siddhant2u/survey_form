@@ -70,6 +70,16 @@ input, textarea {
     border: 1px solid #021f2e;
   }
 
+  input, textarea{
+    border-radius: 20px;
+    text-indent: 5px;
+  }
+  ::placeholder{
+    font-family: cursive;
+    font-style: italic;
+    letter-spacing: 2px;
+  }
+
 .gender {
   display:inline-flex;
 }
@@ -258,4 +268,7 @@ input, textarea {
      font-size:50px;
      height:400px;
    }
+  }
+  .required{
+    color: red;
   }
